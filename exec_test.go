@@ -18,7 +18,7 @@ func TestNew(t *testing.T) {
 	c := goexec.New("./wait", "-s", "1", "-exit", "0")
 
 	// BaseDir is where the code will be running from
-	c.BaseDir = "/Users/gonyi/go/src/stash.acxiom.com/gde/sbi/pkg/goexec/_test"
+	c.BaseDir = "/Users/gonyi/go/src/github.com/gonyyi/goexec/_test"
 
 	// Async's default value is false. If it is set to true, *Exec.Run will wait until job finishes.
 	// c.Async = true
