@@ -15,6 +15,8 @@ func TestNew(t *testing.T) {
 	// Note that args has to be all separated.
 	// > "-s 1", "-exit 0"       // incorrect
 	// > "-s", "1", "-exit", "0" // correct
+	// Alternate way:
+	//   c := goexec.New("./wait", "-s=4", "-exit", "0")
 	c := goexec.New("./wait", "-s", "1", "-exit", "0")
 
 	// BaseDir is where the code will be running from
